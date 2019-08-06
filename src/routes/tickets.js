@@ -1,11 +1,9 @@
-import * as ticketController from '../controllers/ticket';
-
-const express = require('express');
+import express from 'express';
+import { create, getById } from '../controllers/ticket';
 
 const router = express.Router();
 
+router.post('/', create);
+router.get('/:ticketId', getById);
 
-router.post('/', ticketController.create);
-router.get('/:ticketId', ticketController.getById);
-
-module.exports = router;
+export default router;
