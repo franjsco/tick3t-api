@@ -13,8 +13,12 @@ const mongoose = require('./config/database');
 
 const app = express();
 
+<<<<<<< HEAD
 app.set('secretKey', 'ciccio'); // sostituire con variabili ambiente (env)
 app.disable('etag');
+=======
+app.set('secretKey', 'ciccio'); // sostituire con variabili ambiente
+>>>>>>> 32333cc9f65fbfb1b2804906d69a379ea71010c0
 
 // connection to mongodb
 mongoose.connection.on('error', console.error.bind(console, 'MongoDB connection error:'));
@@ -22,6 +26,11 @@ mongoose.connection.on('error', console.error.bind(console, 'MongoDB connection 
 // middleware
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+<<<<<<< HEAD
+=======
+app.disable('etag');
+
+>>>>>>> 32333cc9f65fbfb1b2804906d69a379ea71010c0
 app.use(cors());
 
 // routes
