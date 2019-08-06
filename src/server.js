@@ -13,7 +13,7 @@ const mongoose = require('./config/database');
 
 const app = express();
 
-app.set('secretKey', 'ciccio'); // sostituire con variabili ambiente
+app.set('secretKey', 'ciccio'); // sostituire con variabili ambiente (env)
 app.disable('etag');
 
 // connection to mongodb
