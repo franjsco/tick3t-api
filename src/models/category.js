@@ -1,14 +1,10 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
 // Define a schema
 const { Schema } = mongoose;
 
 const CategorySchema = new Schema({
   type: {
-    type: String,
-    trim: true,
-  },
-  name: {
     type: String,
     trim: true,
   },
