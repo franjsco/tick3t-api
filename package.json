@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/frab1t/tick3t-api.git"
+    "url": "git+https://github.com/franjsco/tick3t-api.git"
   },
-  "author": "frab1t",
+  "author": "franjsco",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/frab1t/tick3t-api/issues"
+    "url": "https://github.com/franjsco/tick3t-api/issues"
   },
-  "homepage": "https://github.com/frab1t/tick3t-api#readme",
+  "homepage": "https://github.com/franjsco/tick3t-api#readme",
   "dependencies": {
     "bcrypt": "^3.0.6",
     "body-parser": "^1.19.0",
